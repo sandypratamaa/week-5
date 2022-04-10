@@ -1,0 +1,35 @@
+package pboo;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class tgspbo {
+	    
+	public static void main(String[] args) {
+		
+	    Scanner input=new Scanner(System.in);
+		
+		int i,jd;
+		
+		String [] nim=new String[10];
+		String [] nama=new String[10];
+		String [] ipk=new String[10];
+		
+		
+		do {
+				
+        System.out.print("Masukan Jumlah Data : ");              
+        jd=input.nextInt();
+        for(i=0;i<=jd;i++)
+        {
+        System.out.println("Data ke-" +i); System.out.print("nim :"); nim[i]=input.next();
+        System.out.print("nama :");
+        nama[i]=input.next();
+        System.out.print("ipk :");
+        ipk[i]=input.next();
+        for(i=0;i<=jd;i++)
+        	
+        System.out.println(i+"\t\t"+nim[i]+"\t\t\t"+nama[i]+"\t\t\t"+ipk[i]);	
+        }		
+    }    		
+}		
