@@ -1,0 +1,29 @@
+package pboo;
+
+import java.util.Scanner;
+
+public class tgspbo {
+
+	public static void main(String[] args) {
+		Scanner input=new Scanner(System.in);
+		   
+        System.out.print("Masukan Jumlah Data : ");
+        int n=input.nextInt();
+        
+        //Deklarasi array
+        String angka[]=new String[n];
+      
+        //Input data ke array
+        for(int i=0;i<angka.length;i++)
+        {
+           System.out.print("data ke "+(i+1)+" : ");
+           angka [i]=input.next();
+        }
+        //Menampilkan data dalam array
+        System.out.println("Angka-angka yang dimasukan");
+        for(int i=0;i<angka.length;i++)
+        {
+          System.out.println(angka[i]);
+        }
+    }
+ }
